@@ -18,7 +18,7 @@
   -**Composite**
       Handle single media or whole playlists the same way.
   -**"Proxy**
-      Cache remote media to improve speed."
+      Cache remote media to improve speed.
 
 file_structure: |
   /ModularMediaStreamingSuite
@@ -64,5 +64,6 @@ file_structure: |
 
   This project was made for a Java lab to practice structural design patterns in a clear and simple way.
   It can be extended with more media features or plugins in the future.
+
 
 
