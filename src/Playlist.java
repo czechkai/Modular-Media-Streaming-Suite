@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
   Playlist is a composite that can contain Media items (MediaFile or other Playlists).
@@ -28,7 +27,6 @@ public class Playlist implements Media {
         }
     }
 
-    // Convenience methods to manage playlist contents
     public void add(Media m) {
         items.add(m);
     }

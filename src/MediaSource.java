@@ -1,5 +1,4 @@
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /*
   MediaSource defines a way to load media by id. This abstracts where the
