@@ -11,7 +11,6 @@ interface MediaSource {
 class LocalSource implements MediaSource {
     @Override
     public Media load(String id) {
-        // In a real app we'd check the filesystem. Here we simulate.
         System.out.println("Loading local media: " + id);
         return new MediaFile(id);
     }
@@ -25,13 +24,9 @@ class HlsSource implements MediaSource {
     }
 }
 
-/**
- * RemoteProxySource demonstrates the Proxy pattern: it wraps a real remote
- * source and caches results to avoid reloading the same remote media repeatedly.
- */
 class RemoteProxySource implements MediaSource {
     private MediaSource remote;
-    private Map<String, Media> cache = new HashMap<>();
+    private static Map<String, Media> cache = new HashMap<>();
 
     public RemoteProxySource(MediaSource remote) {
         this.remote = remote;
@@ -43,7 +38,7 @@ class RemoteProxySource implements MediaSource {
             System.out.println("Cache hit for: " + id);
             return cache.get(id);
         }
-        System.out.println("sCache miss for: " + id + " - fetching from remote");
+        System.out.println("Cache miss for: " + id + " - fetching from remote");
         Media m = remote.load(id);
         cache.put(id, m);
         return m;

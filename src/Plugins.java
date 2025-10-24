@@ -12,7 +12,7 @@ abstract class MediaDecorator implements Media {
 
     @Override
     public void play() {
-        // Default behavior: delegate to wrapped media
+       
         wrapped.play();
     }
 }
