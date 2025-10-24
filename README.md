@@ -1,9 +1,8 @@
-﻿title: "Modular Media Streaming Suite"
-description: >
+**Modular Media Streaming Suite**
   A Java console app that simulates a simple media player with add-on features.
   It uses design patterns like Decorator, Composite, and Proxy to make the system modular and flexible.
 
-features:
+**Features:**
   - Play media from local or remote sources
   - Create and play playlists
   - Add extra features:
@@ -13,13 +12,13 @@ features:
   - Switch between software and hardware rendering
   - Cache remote media using a proxy
 
-design_patterns:
-  - name: "Decorator"
-    purpose: "Add plugins like subtitles and watermark while running."
-  - name: "Composite"
-    purpose: "Handle single media or whole playlists the same way."
-  - name: "Proxy"
-    purpose: "Cache remote media to improve speed."
+**Design Patterns:**
+  -**Decorator**
+      Add plugins like subtitles and watermark while running.
+  -**Composite**
+      Handle single media or whole playlists the same way.
+  -**"Proxy**
+      Cache remote media to improve speed."
 
 file_structure: |
   /ModularMediaStreamingSuite
@@ -32,24 +31,28 @@ file_structure: |
   ├── Render.java
   └── README.md
 
-how_to_run:
-  step_1:
-    title: "Clone from GitHub"
+**How to run:**
+  **Step 1:**
+    Clone from GitHub
     commands: |
       git clone https://github.com/<your-username>/ModularMediaStreamingSuite.git
       cd ModularMediaStreamingSuite
-  step_2:
-    title: "Open in VS Code"
+      
+  **Step 2**
+    Open in VS Code
     instructions:
       - Open VS Code.
       - Go to **File → Open Folder...** and select the cloned project.
       - Open the terminal in VS Code (Ctrl + `).
-  step_3:
-    title: "Compile the Code"
+      
+  **Step 3**
+    Compile the Code
     command: javac *.java
-  step_4:
+    
+  **Step 4**
     title: "Run the Program"
     command: java Main
+    
     console_output: |
       Welcome to Modular Media Streaming Suite
       ----------------------------------------
@@ -59,7 +62,7 @@ how_to_run:
       Playing media...
       Playback complete!
 
-developer_note: >
   This project was made for a Java lab to practice structural design patterns in a clear and simple way.
   It can be extended with more media features or plugins in the future.
+
 
